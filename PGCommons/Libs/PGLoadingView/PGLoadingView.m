@@ -28,9 +28,15 @@ static NSString * const PGNibName = @"PGLoadingView";
 
 - (void)show {
     [[self.delegate viewToLoading] addSubview:self.view];
+    
+    self.label.text = NSLocalizedString(@"!Carregando...", nil);
+    
+    [self.indicator startAnimating];
 }
 
 - (void)hide {
+//    [self.indicator stopAnimating];
+    
     [self.view removeFromSuperview];
 }
 
@@ -41,7 +47,6 @@ static NSString * const PGNibName = @"PGLoadingView";
     NSString *xibName = [self.delegate respondsToSelector:@selector(nibToLoading)] ? [self.delegate nibToLoading] : PGNibName;
     
     self.view = [[[NSBundle mainBundle] loadNibNamed:xibName owner:self options:nil] objectAtIndex:0];
-//    [self addSubview:self.view];
 }
 
 @end

@@ -17,13 +17,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.loading = [[PGLoadingView alloc] initWithDelegate:self];
+
+    [self.loading show];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark PGLoadingViewDelegate
+
+- (UIView *)viewToLoading {
+    return self.view;
 }
 
 @end

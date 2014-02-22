@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PGLoadingView.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <PGLoadingViewDelegate>
+
+@property (nonatomic, strong) PGLoadingView *loading;
 
 @end
