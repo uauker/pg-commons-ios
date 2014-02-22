@@ -22,6 +22,8 @@
 		235D423718B8D35400C8449D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235D421618B8D35400C8449D /* UIKit.framework */; };
 		235D423F18B8D35400C8449D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 235D423D18B8D35400C8449D /* InfoPlist.strings */; };
 		235D424118B8D35400C8449D /* PGCommonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 235D424018B8D35400C8449D /* PGCommonsTests.m */; };
+		235D424E18B8D5B600C8449D /* PGLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 235D424D18B8D5B600C8449D /* PGLoadingView.m */; };
+		235D425018B8D62600C8449D /* PGLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235D424F18B8D62600C8449D /* PGLoadingView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		235D423C18B8D35400C8449D /* PGCommonsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PGCommonsTests-Info.plist"; sourceTree = "<group>"; };
 		235D423E18B8D35400C8449D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		235D424018B8D35400C8449D /* PGCommonsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGCommonsTests.m; sourceTree = "<group>"; };
+		235D424C18B8D5B600C8449D /* PGLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGLoadingView.h; sourceTree = "<group>"; };
+		235D424D18B8D5B600C8449D /* PGLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGLoadingView.m; sourceTree = "<group>"; };
+		235D424F18B8D62600C8449D /* PGLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGLoadingView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,7 @@
 		235D420618B8D35400C8449D = {
 			isa = PBXGroup;
 			children = (
+				235D424A18B8D4DF00C8449D /* Libs */,
 				235D421818B8D35400C8449D /* PGCommons */,
 				235D423A18B8D35400C8449D /* PGCommonsTests */,
 				235D421118B8D35400C8449D /* Frameworks */,
@@ -155,6 +161,24 @@
 				235D423D18B8D35400C8449D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		235D424A18B8D4DF00C8449D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				235D424B18B8D58800C8449D /* PGLoadingView */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		235D424B18B8D58800C8449D /* PGLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				235D424C18B8D5B600C8449D /* PGLoadingView.h */,
+				235D424D18B8D5B600C8449D /* PGLoadingView.m */,
+				235D424F18B8D62600C8449D /* PGLoadingView.xib */,
+			);
+			path = PGLoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +259,7 @@
 			files = (
 				235D422E18B8D35400C8449D /* Images.xcassets in Resources */,
 				235D421D18B8D35400C8449D /* InfoPlist.strings in Resources */,
+				235D425018B8D62600C8449D /* PGLoadingView.xib in Resources */,
 				235D422618B8D35400C8449D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +282,7 @@
 				235D422C18B8D35400C8449D /* SecondViewController.m in Sources */,
 				235D422318B8D35400C8449D /* AppDelegate.m in Sources */,
 				235D422918B8D35400C8449D /* FirstViewController.m in Sources */,
+				235D424E18B8D5B600C8449D /* PGLoadingView.m in Sources */,
 				235D421F18B8D35400C8449D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
