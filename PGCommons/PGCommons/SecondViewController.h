@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PGEmptyView.h"
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <PGEmptyViewDelegate>
+
+@property (nonatomic, strong) PGEmptyView *empty;
 
 @end

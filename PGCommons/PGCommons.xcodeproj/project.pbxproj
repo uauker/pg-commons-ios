@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2331B33418B99290000EADAA /* PGEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2331B33318B99290000EADAA /* PGEmptyView.m */; };
+		2331B33618B99440000EADAA /* PGEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2331B33518B99440000EADAA /* PGEmptyView.xib */; };
 		235D421318B8D35400C8449D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235D421218B8D35400C8449D /* Foundation.framework */; };
 		235D421518B8D35400C8449D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235D421418B8D35400C8449D /* CoreGraphics.framework */; };
 		235D421718B8D35400C8449D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235D421618B8D35400C8449D /* UIKit.framework */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2331B33218B99290000EADAA /* PGEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGEmptyView.h; sourceTree = "<group>"; };
+		2331B33318B99290000EADAA /* PGEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGEmptyView.m; sourceTree = "<group>"; };
+		2331B33518B99440000EADAA /* PGEmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGEmptyView.xib; sourceTree = "<group>"; };
 		235D420F18B8D35400C8449D /* PGCommons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGCommons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235D421218B8D35400C8449D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		235D421418B8D35400C8449D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2331B33118B991FE000EADAA /* PGEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				2331B33218B99290000EADAA /* PGEmptyView.h */,
+				2331B33318B99290000EADAA /* PGEmptyView.m */,
+				2331B33518B99440000EADAA /* PGEmptyView.xib */,
+			);
+			path = PGEmptyView;
+			sourceTree = "<group>";
+		};
 		235D420618B8D35400C8449D = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +181,7 @@
 		235D424A18B8D4DF00C8449D /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				2331B33118B991FE000EADAA /* PGEmptyView */,
 				235D424B18B8D58800C8449D /* PGLoadingView */,
 			);
 			path = Libs;
@@ -257,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2331B33618B99440000EADAA /* PGEmptyView.xib in Resources */,
 				235D422E18B8D35400C8449D /* Images.xcassets in Resources */,
 				235D421D18B8D35400C8449D /* InfoPlist.strings in Resources */,
 				235D425018B8D62600C8449D /* PGLoadingView.xib in Resources */,
@@ -282,6 +299,7 @@
 				235D422C18B8D35400C8449D /* SecondViewController.m in Sources */,
 				235D422318B8D35400C8449D /* AppDelegate.m in Sources */,
 				235D422918B8D35400C8449D /* FirstViewController.m in Sources */,
+				2331B33418B99290000EADAA /* PGEmptyView.m in Sources */,
 				235D424E18B8D5B600C8449D /* PGLoadingView.m in Sources */,
 				235D421F18B8D35400C8449D /* main.m in Sources */,
 			);
@@ -492,6 +510,7 @@
 				235D424618B8D35400C8449D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		235D424718B8D35400C8449D /* Build configuration list for PBXNativeTarget "PGCommonsTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +519,7 @@
 				235D424918B8D35400C8449D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

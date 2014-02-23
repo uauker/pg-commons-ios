@@ -17,13 +17,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.empty = [[PGEmptyView alloc] initWithDelegate:self];
+    
+    [self.empty show];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark PGEmptyViewDelegate
+
+- (UIView *)viewToLoading {
+    return self.view;
 }
 
 @end
