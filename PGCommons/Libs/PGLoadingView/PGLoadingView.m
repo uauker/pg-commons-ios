@@ -27,18 +27,10 @@ static NSString * const PGNibName = @"PGLoadingView";
 }
 
 - (void)show {
-    self.label = (UILabel *)[self.view viewWithTag:1];
-    self.label.text = NSLocalizedString(@"Carregando...", nil);    
-    
-    self.indicator = (UIActivityIndicatorView *)[self.view viewWithTag:2];
-    [self.indicator startAnimating];
-    
     [[self.delegate viewToLoading] addSubview:self.view];
 }
 
 - (void)hide {
-    [self.indicator stopAnimating];
-    
     [self.view removeFromSuperview];
 }
 
