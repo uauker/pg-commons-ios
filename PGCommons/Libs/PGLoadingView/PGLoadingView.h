@@ -26,8 +26,6 @@
 @property (nonatomic, weak) id<PGLoadingViewDelegate> delegate;
 
 @property (nonatomic, strong) UIView *view;
-@property (weak, nonatomic) UIActivityIndicatorView *indicator;
-@property (weak, nonatomic) UILabel *label;
 
 
 - (id)initWithDelegate:(id<PGLoadingViewDelegate>) delegate;
