@@ -28,6 +28,9 @@ static NSString * const PGNibName = @"PGEmptyView";
 
 - (void)show {
     [[self.delegate viewToLoading] addSubview:self.view];
+    
+    UILabel *label = (UILabel *)[self.view viewWithTag:1];
+    label.text = @"Nada foi encontrado, tente novamente mais tarde. Nada foi encontrado, tente novamente mais tarde. Nada foi encontrado, tente novamente mais tarde. Nada foi encontrado, tente novamente mais tarde. ";
 }
 
 - (void)hide {
